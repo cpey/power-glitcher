@@ -1,0 +1,27 @@
+* Source: The Art of Electronics
++ Crossover distortion in push-pull stages (Page 107)
++ Thermal stability in class-B push-pull amplifiers (Page 108)
+
+- Considering load: 500 mA, 5V
+- Power = 2.5 W
+- Beta = 50
+- B = Ic/Ib => Ib = Ic / B = 500e-3 / 50. = 0.01 A = 10 mA (base current)
+- peak base current = 5V, Vcc = 15V => R = 10V / 10 mA = 1K
+- peak base current = 5V, Vcc = 7.5V => R = 2.5V / 10 mA = 250
+
+* Power booster (page 234)
+
+* LM2735
+
+10% ripple: Ail => 10% of max load = 10% of .5 A = 0.05 A
+20% ripple: Ail => 10% of max load = 10% of .5 A = 0.1 A
+1/Ts = Fsw (switching frequency: 1.6MHz) => Ts = 1/1.6MHz = 6.25e-7 = 0.625e-6
+D = (Vout - Vin) / Vout = (7.5 - 5) / 7.5 = 0.33
+10% ripple: L = (Vin / (2 * Ail)) * D*Ts = (5 / (2 * 0.05)) * 0.33 * 0.625e-6 = 10.31 uH
+20% ripple: L = (Vin / (2 * Ail)) * D*Ts = (5 / (2 * 0.1)) * 0.33 * 0.625e-6 = 5.15 uH
+Rload = 7.5 V / 0.5 A = 15 Ohm
+R1 = 10 K
+Vref = 1.255 V
+R2 = ( Vout / Vref - 1 ) * R1 = 49760 ohm ~ 49.9KOhm  
+
+https://webench.ti.com/power-designer/switching-regulator/select

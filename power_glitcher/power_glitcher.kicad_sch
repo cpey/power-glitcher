@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power Glitcher")
-		(date "2024-10-20")
-		(rev "1.0")
+		(date "2024-11-17")
+		(rev "2.0")
 		(company "Carles Pey")
 	)
 	(lib_symbols
@@ -2187,6 +2187,231 @@
 				)
 			)
 		)
+		(symbol "Regulator_SwitchedCapacitor:ICL7660"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ICL7660"
+				(at 3.81 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/ICL7660-MAX1044.pdf"
+				(at 2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switched-Capacitor Voltage Converter, 1.5V to 10.0V operating supply voltage, 10mA with a 0.5V output drop, SO-8/DIP-8/µMAX-8/TO-99"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "monolithic CMOS switched capacitor voltage converter invert double divide multiply"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "DIP*W7.62mm* SOIC*3.9x4.9mm* MSOP*3x3mm*P0.65mm* TO?99*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ICL7660_0_1"
+				(rectangle
+					(start -7.62 10.16)
+					(end 7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ICL7660_1_1"
+				(pin no_connect line
+					(at -7.62 5.08 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "CAP+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "CAP-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "LV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "OSC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Switching:LM2735XMF"
 			(pin_names
 				(offset 0.254)
@@ -3664,6 +3889,12 @@
 		(uuid "0cbc2923-de47-4335-974b-e3d89e71924b")
 	)
 	(junction
+		(at 181.61 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d5c960b-80dc-40d2-8362-f79a266ec062")
+	)
+	(junction
 		(at 147.32 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3682,10 +3913,10 @@
 		(uuid "1dda7cec-78b4-436f-8c2c-ecb5ccc942d1")
 	)
 	(junction
-		(at 179.07 132.08)
+		(at 196.85 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1fe21cf8-08c9-4773-96e1-b8a624b5a535")
+		(uuid "21504e97-4bd8-40f5-a7f3-87b9d1280aa8")
 	)
 	(junction
 		(at 49.53 55.88)
@@ -3704,6 +3935,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ddcfda0-6962-41ad-bf2e-0db06d89f23e")
+	)
+	(junction
+		(at 189.23 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "475634d5-8df6-4cf9-856d-d9fe001a2a0e")
 	)
 	(junction
 		(at 41.91 115.57)
@@ -3730,10 +3967,10 @@
 		(uuid "5a21548f-5b40-4161-bc60-e6560de81ffd")
 	)
 	(junction
-		(at 190.5 147.32)
+		(at 189.23 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6b4aeb95-59d3-40f1-b685-66eb1c63bbfc")
+		(uuid "6b76a9f7-6d40-44b3-b47b-5870cff591c7")
 	)
 	(junction
 		(at 133.35 97.79)
@@ -3766,12 +4003,6 @@
 		(uuid "8523cef1-7d04-4513-9681-5a0d1e314127")
 	)
 	(junction
-		(at 190.5 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d574d8d-b515-44bd-9504-eb52b15e33b1")
-	)
-	(junction
 		(at 96.52 158.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3794,6 +4025,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9de8618a-c11b-4d9d-9558-468d1e3a73a0")
+	)
+	(junction
+		(at 181.61 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a28fb22a-8ea3-4b11-a730-e2f8a0516fb1")
 	)
 	(junction
 		(at 113.03 46.99)
@@ -3862,10 +4099,28 @@
 		(uuid "d74f6cec-bf91-4618-8e54-edc7b83d719b")
 	)
 	(junction
+		(at 45.72 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9a749bd-deab-45e8-b4ee-84b9c41aacf2")
+	)
+	(junction
+		(at 199.39 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2a5a2b3-3eb8-4441-a39f-139874e5cf58")
+	)
+	(junction
 		(at 68.58 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e501d5db-2c01-4ba2-97b6-727711d4732b")
+	)
+	(junction
+		(at 199.39 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6417e35-683f-465c-a7fa-8c23c7478788")
 	)
 	(junction
 		(at 134.62 177.8)
@@ -3874,10 +4129,10 @@
 		(uuid "ea91c0ed-0491-4b28-8e9b-e260149ed46e")
 	)
 	(junction
-		(at 179.07 147.32)
+		(at 60.96 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f103c8a5-d6d5-4915-9012-19bc444e8438")
+		(uuid "ee8541b6-fedd-4c6a-8d46-e21cce681205")
 	)
 	(junction
 		(at 49.53 21.59)
@@ -3915,6 +4170,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 185.42) (xy 48.26 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02477bcc-1ed1-4573-8268-c258692a23fa")
+	)
+	(wire
+		(pts
 			(xy 90.17 140.97) (xy 90.17 138.43)
 		)
 		(stroke
@@ -3932,6 +4197,16 @@
 			(type default)
 		)
 		(uuid "0786cdf1-b9fe-4b6e-91df-3bee37f74704")
+	)
+	(wire
+		(pts
+			(xy 228.6 25.4) (xy 232.41 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "080318a0-a284-4a26-a427-19d4990daadb")
 	)
 	(wire
 		(pts
@@ -3975,13 +4250,13 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 142.24) (xy 204.47 147.32)
+			(xy 45.72 185.42) (xy 45.72 182.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e7c8462-35e4-4933-8854-37c010af18f9")
+		(uuid "0e7a7549-d2d8-49c5-a5e8-1124ddec9ba1")
 	)
 	(wire
 		(pts
@@ -4045,13 +4320,13 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 132.08) (xy 204.47 134.62)
+			(xy 189.23 144.78) (xy 199.39 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19f3736e-4536-4dbe-8c51-d7a4c29f0a18")
+		(uuid "1a4e27b9-3b87-4c78-97ef-2ffb3e4fb26f")
 	)
 	(wire
 		(pts
@@ -4075,7 +4350,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 147.32) (xy 179.07 151.13)
+			(xy 181.61 137.16) (xy 181.61 140.97)
 		)
 		(stroke
 			(width 0)
@@ -4405,6 +4680,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 185.42) (xy 60.96 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e8c3d4a-0992-44fc-9c41-666288f21c17")
+	)
+	(wire
+		(pts
 			(xy 74.93 120.65) (xy 77.47 120.65)
 		)
 		(stroke
@@ -4705,6 +4990,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 22.86) (xy 196.85 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6223ab25-e174-4e53-a348-936e8af24763")
+	)
+	(wire
+		(pts
 			(xy 129.54 39.37) (xy 129.54 41.91)
 		)
 		(stroke
@@ -4755,6 +5050,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 124.46) (xy 199.39 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69775648-cc96-449d-bdfb-fa24661f0e34")
+	)
+	(wire
+		(pts
 			(xy 254 92.71) (xy 260.35 92.71)
 		)
 		(stroke
@@ -4782,6 +5087,26 @@
 			(type default)
 		)
 		(uuid "6f0efc06-20d0-45b1-b956-e7d24e3e7907")
+	)
+	(wire
+		(pts
+			(xy 232.41 27.94) (xy 228.6 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f26892a-13f0-4481-b5b4-dfebb6e5d66d")
+	)
+	(wire
+		(pts
+			(xy 45.72 187.96) (xy 45.72 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f4f5f1b-19ef-4e04-af91-2399e27efbbb")
 	)
 	(wire
 		(pts
@@ -4832,6 +5157,16 @@
 			(type default)
 		)
 		(uuid "74fd8537-c7f9-4cb4-98db-3fc85ffc4eea")
+	)
+	(wire
+		(pts
+			(xy 181.61 116.84) (xy 181.61 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75414b1f-1141-4936-8a07-c6a2d2cd6df4")
 	)
 	(wire
 		(pts
@@ -4935,6 +5270,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 22.86) (xy 162.56 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8192a60c-8b75-4144-8f64-68b3fab8373f")
+	)
+	(wire
+		(pts
 			(xy 43.18 80.01) (xy 62.23 80.01)
 		)
 		(stroke
@@ -5015,6 +5360,26 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 38.1) (xy 186.69 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e30d9ce-a9b5-4e20-93b0-ca31e6eabcf7")
+	)
+	(wire
+		(pts
+			(xy 182.88 27.94) (xy 186.69 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e3cf515-1478-46f2-891d-20b57c7191e2")
+	)
+	(wire
+		(pts
 			(xy 74.93 69.85) (xy 74.93 72.39)
 		)
 		(stroke
@@ -5022,16 +5387,6 @@
 			(type default)
 		)
 		(uuid "93f79f53-e65e-43a8-be2d-43b913e5056f")
-	)
-	(wire
-		(pts
-			(xy 190.5 147.32) (xy 204.47 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95a0d0ee-d11a-4ebe-a68d-2411daeaa0d9")
 	)
 	(wire
 		(pts
@@ -5105,7 +5460,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 130.81) (xy 152.4 130.81)
+			(xy 148.59 127) (xy 156.21 127)
 		)
 		(stroke
 			(width 0)
@@ -5132,16 +5487,6 @@
 			(type default)
 		)
 		(uuid "a01dafea-9e69-4b7b-8cec-117bf550a0d6")
-	)
-	(wire
-		(pts
-			(xy 179.07 132.08) (xy 190.5 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1e644aa-c5b5-48b2-90d6-8d6f8c485c11")
 	)
 	(wire
 		(pts
@@ -5265,6 +5610,16 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 137.16) (xy 199.39 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1e8df20-2286-479c-b5a5-6cca0ee7aae1")
+	)
+	(wire
+		(pts
 			(xy 43.18 100.33) (xy 43.18 105.41)
 		)
 		(stroke
@@ -5305,6 +5660,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 116.84) (xy 189.23 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b671117f-7e3b-4cfa-add3-4a009b03dd49")
+	)
+	(wire
+		(pts
 			(xy 43.18 82.55) (xy 62.23 82.55)
 		)
 		(stroke
@@ -5315,7 +5680,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 133.35) (xy 144.78 130.81)
+			(xy 148.59 129.54) (xy 148.59 127)
 		)
 		(stroke
 			(width 0)
@@ -5325,7 +5690,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 128.27) (xy 144.78 128.27)
+			(xy 143.51 124.46) (xy 148.59 124.46)
 		)
 		(stroke
 			(width 0)
@@ -5375,6 +5740,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 38.1) (xy 186.69 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be59a91d-6dfb-4a89-ad73-86814ac776be")
+	)
+	(wire
+		(pts
 			(xy 41.91 142.24) (xy 49.53 142.24)
 		)
 		(stroke
@@ -5382,6 +5757,16 @@
 			(type default)
 		)
 		(uuid "c0089a1d-0da3-4dd5-9c5d-4948fa66aec0")
+	)
+	(wire
+		(pts
+			(xy 181.61 137.16) (xy 189.23 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4dd8a58-927c-494b-be1d-20e75926fb84")
 	)
 	(wire
 		(pts
@@ -5405,6 +5790,16 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 187.96) (xy 60.96 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca88a092-1031-44a1-bb60-4dee044cabb6")
+	)
+	(wire
+		(pts
 			(xy 41.91 116.84) (xy 41.91 115.57)
 		)
 		(stroke
@@ -5422,16 +5817,6 @@
 			(type default)
 		)
 		(uuid "ccda9d8e-0396-45b1-8371-854be6c96056")
-	)
-	(wire
-		(pts
-			(xy 190.5 132.08) (xy 204.47 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce7af223-8a6f-4436-963d-8aa1572da57f")
 	)
 	(wire
 		(pts
@@ -5475,16 +5860,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 142.24) (xy 190.5 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1e1b496-2a02-4def-a1f6-9f43c35cb63a")
-	)
-	(wire
-		(pts
 			(xy 43.18 95.25) (xy 62.23 95.25)
 		)
 		(stroke
@@ -5522,6 +5897,16 @@
 			(type default)
 		)
 		(uuid "d730fde7-7f45-44c4-a450-9f73ab06e08b")
+	)
+	(wire
+		(pts
+			(xy 172.72 44.45) (xy 172.72 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7f9f6d8-ea29-4505-8e8c-0dbc5d30aabb")
 	)
 	(wire
 		(pts
@@ -5565,7 +5950,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 127) (xy 179.07 132.08)
+			(xy 181.61 115.57) (xy 181.61 116.84)
 		)
 		(stroke
 			(width 0)
@@ -5582,6 +5967,16 @@
 			(type default)
 		)
 		(uuid "df7e13f8-8779-44c3-be4f-95b2d20f6351")
+	)
+	(wire
+		(pts
+			(xy 189.23 116.84) (xy 199.39 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06c4aed-d4f6-4819-b9b5-65e7aad7e994")
 	)
 	(wire
 		(pts
@@ -5625,6 +6020,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 22.86) (xy 196.85 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5211800-fe62-4c06-a8de-a1def0f85879")
+	)
+	(wire
+		(pts
 			(xy 195.58 90.17) (xy 187.96 90.17)
 		)
 		(stroke
@@ -5632,16 +6037,6 @@
 			(type default)
 		)
 		(uuid "e54df0ac-d502-406a-9d26-3f97493c4850")
-	)
-	(wire
-		(pts
-			(xy 179.07 147.32) (xy 190.5 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5679c95-6549-447d-bc48-1142901492e3")
 	)
 	(wire
 		(pts
@@ -5685,16 +6080,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 134.62) (xy 190.5 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eaca0b65-f4f5-4569-831f-df93b214217c")
-	)
-	(wire
-		(pts
 			(xy 55.88 132.08) (xy 55.88 133.35)
 		)
 		(stroke
@@ -5712,6 +6097,16 @@
 			(type default)
 		)
 		(uuid "f3b43798-2422-4d2e-85ab-e32cae54ee07")
+	)
+	(wire
+		(pts
+			(xy 186.69 27.94) (xy 186.69 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4792c99-eb03-442f-92c8-6d80b192a688")
 	)
 	(wire
 		(pts
@@ -5773,9 +6168,19 @@
 		)
 		(uuid "fb3e402c-3ebe-4ea7-aa0d-26859c40ea1f")
 	)
+	(wire
+		(pts
+			(xy 55.88 185.42) (xy 60.96 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc099c3d-809c-4a2a-9f8c-89db015408ab")
+	)
 	(rectangle
 		(start 29.21 149.86)
-		(end 68.58 190.5)
+		(end 68.58 195.326)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5860,7 +6265,7 @@
 		(uuid "1ced0d02-4f08-4c8f-b7ad-e4ebd03df67e")
 	)
 	(label "signal"
-		(at 139.7 128.27 0)
+		(at 143.51 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6534,6 +6939,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-15V")
+		(at 45.72 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1792c7a7-acc9-474a-ba9a-b95b95a1d8cc")
+		(property "Reference" "#PWR017"
+			(at 45.72 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V-"
+			(at 45.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
+			(at 45.72 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ac3116f-2ecb-43f3-97fd-0ab202fcba5c")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 41.91 120.65 0)
 		(unit 1)
@@ -6597,6 +7068,73 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 237.49 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f5a84ae-3dc0-4633-8e2f-b2c4213c5c89")
+		(property "Reference" "J6"
+			(at 237.49 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 237.49 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 237.49 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 237.49 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e518611b-cc66-408d-a8f3-ef7184d556af")
+		)
+		(pin "2"
+			(uuid "ae7f357b-41a4-4e63-8f1b-454b1b11fa48")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -6935,6 +7473,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-15V")
+		(at 196.85 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24481194-09d0-4dd8-ab27-e1c6685faaa3")
+		(property "Reference" "#PWR033"
+			(at 196.85 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V-"
+			(at 196.85 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
+			(at 196.85 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e1d1d98-8e3f-425a-a4aa-ebdc7e96c2b1")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 267.97 135.89 0)
 		(unit 1)
@@ -6996,6 +7600,72 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "295099d7-9198-4517-9a77-b36dc6f2b294")
+		(property "Reference" "#PWR041"
+			(at 199.39 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AGND"
+			(at 199.39 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f19ee43-bce2-4fb1-b9ee-99a09ce549d7")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -7138,74 +7808,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 45.72 182.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "308ef127-36be-4331-9574-9801853c2d39")
-		(property "Reference" "#PWR018"
-			(at 45.72 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "AGND"
-			(at 45.72 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f9e35bce-9ea6-4fd4-9548-f2c8f892c2b6")
-		)
-		(instances
-			(project "power_glitcher"
-				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 157.48 128.27 0)
+		(at 161.29 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7213,7 +7817,7 @@
 		(dnp no)
 		(uuid "30db4d0a-aaf8-45d3-b3ce-6c0386e75b43")
 		(property "Reference" "J5"
-			(at 157.48 137.16 0)
+			(at 161.29 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7221,7 +7825,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 157.48 134.62 0)
+			(at 161.29 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7229,7 +7833,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 157.48 128.27 0)
+			(at 161.29 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7238,7 +7842,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 128.27 0)
+			(at 161.29 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7247,7 +7851,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 157.48 128.27 0)
+			(at 161.29 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7338,74 +7942,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 231.14 140.97 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39abef22-25fc-419f-9383-44d7a90a59f0")
-		(property "Reference" "JP2"
-			(at 231.14 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 231.14 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 231.14 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 231.14 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fd792dfd-5c82-4d45-b151-f260d1fbaa9c")
-		)
-		(pin "1"
-			(uuid "b4900713-254b-44c2-bd80-2714dd562c91")
-		)
-		(instances
-			(project ""
-				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 121.92 187.96 0)
 		(unit 1)
@@ -7466,6 +8002,75 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 199.39 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a5819e5-362e-4d35-a5fc-0f9a4df80c40")
+		(property "Reference" "C13"
+			(at 202.438 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 202.438 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 200.3552 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 199.39 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bff6fb33-8e0f-4a8d-a932-4323ba786d33")
+		)
+		(pin "1"
+			(uuid "41695dab-bd27-4682-9720-91cac0c04d14")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -7812,76 +8417,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 190.5 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "493f91d2-b989-4a65-944b-3c4a27558ae6")
-		(property "Reference" "C11"
-			(at 194.31 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 194.31 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 191.4652 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 190.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 190.5 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0014e7ff-f5c6-4076-b75f-9a297e2655af")
-		)
-		(pin "1"
-			(uuid "49cf7c52-7e6d-4345-bd20-214b6707b7de")
-		)
-		(instances
-			(project "power_glitcher"
-				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:ADA4610-1xRJ")
 		(at 48.26 175.26 0)
 		(mirror x)
@@ -7892,7 +8427,7 @@
 		(dnp no)
 		(uuid "4b0d1794-cbc4-46d7-bd43-e7ab9e36f883")
 		(property "Reference" "U3"
-			(at 53.34 184.15 0)
+			(at 49.784 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7900,7 +8435,7 @@
 			)
 		)
 		(property "Value" "TL081H"
-			(at 53.34 181.61 0)
+			(at 51.308 172.212 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7954,6 +8489,72 @@
 			(project ""
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 196.85 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50a39fde-f788-4b3b-8473-bb60198b539e")
+		(property "Reference" "#PWR044"
+			(at 196.85 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AGND"
+			(at 196.85 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 196.85 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 196.85 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ebeebe8-46ce-40db-bf86-73fb7a138933")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -8098,6 +8699,74 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 52.07 185.42 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "587c8c24-2fb4-4f1f-9be9-5c0c62def727")
+		(property "Reference" "C25"
+			(at 52.07 179.578 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 52.07 182.118 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 48.26 184.4548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 52.07 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "02e58320-53a1-492d-b6e3-323af74b99e9")
+		)
+		(pin "1"
+			(uuid "8220b928-d92a-4239-b3a1-e7382f17d1d6")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -8393,17 +9062,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 45.72 162.56 0)
+		(lib_id "Device:C")
+		(at 199.39 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63ab869e-189c-4cf4-9e95-2846784493bd")
-		(property "Reference" "#PWR017"
-			(at 45.72 166.37 0)
+		(uuid "61622b34-a03f-4e15-8101-af3c234ffc60")
+		(property "Reference" "C22"
+			(at 202.438 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 202.438 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 200.3552 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8411,16 +9097,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AVCC"
-			(at 45.72 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 162.56 0)
+		(property "Datasheet" "~"
+			(at 199.39 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8428,8 +9106,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 45.72 162.56 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 199.39 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8437,22 +9115,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 45.72 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "1daedcd0-5f6d-4cd2-be92-294a0e19572d")
 		)
 		(pin "1"
-			(uuid "9a5cc5e7-393b-4deb-8445-959eb57c3e3a")
+			(uuid "7d8dded8-c2c6-44ca-b69d-5ae02f386eb8")
 		)
 		(instances
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "#PWR017")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -8609,6 +9281,72 @@
 			(project ""
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "655b8053-76b6-4f46-9538-3a3b2bd2b293")
+		(property "Reference" "#PWR042"
+			(at 199.39 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AGND"
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1e93042f-6b48-46c2-a6fe-ee96475520d2")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -8812,6 +9550,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-15V")
+		(at 228.6 27.94 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6772064f-b7a7-40f7-8537-2bad7f82ef4a")
+		(property "Reference" "#PWR08"
+			(at 228.6 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V-"
+			(at 228.6 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
+			(at 228.6 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "019809e6-73eb-4a56-a1e8-683012b2f5b4")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 49.53 45.72 0)
 		(unit 1)
@@ -8944,17 +9748,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 179.07 127 0)
+		(lib_id "Device:C")
+		(at 189.23 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "789a97e9-92a9-42af-8d6d-4c39723b89d1")
-		(property "Reference" "#PWR09"
-			(at 179.07 130.81 0)
+		(uuid "72f73fac-8b60-483f-b38e-7ee2988ae365")
+		(property "Reference" "C21"
+			(at 191.77 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 191.77 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 190.1952 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8962,16 +9783,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "AVCC"
-			(at 179.07 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 127 0)
+		(property "Datasheet" "~"
+			(at 189.23 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8979,8 +9792,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 179.07 127 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 189.23 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8988,22 +9801,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 179.07 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "4f35c74a-23d9-40e4-93ca-7654ea29ad66")
 		)
 		(pin "1"
-			(uuid "39d3d501-6c2b-49ae-bcd9-e491b11c5d94")
+			(uuid "bfff0071-97e8-4db8-b00d-38bccea013a5")
 		)
 		(instances
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "#PWR09")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -9136,6 +9943,141 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 181.61 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fa9def8-7c4c-4020-8b48-29e6d1ca6dcb")
+		(property "Reference" "#PWR09"
+			(at 181.61 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V+"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 181.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "095badce-443a-4689-81c5-c5a9d6529cf0")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 186.69 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fe12bfe-9eb9-4532-8d0e-cf6e26594c51")
+		(property "Reference" "C23"
+			(at 189.23 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 189.23 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 187.6552 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 186.69 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 186.69 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe355e6c-f9dd-4312-b835-c30e5c77c1bf")
+		)
+		(pin "1"
+			(uuid "ea71187c-40e3-4c28-b374-f8e1ea350968")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -9809,16 +10751,15 @@
 	)
 	(symbol
 		(lib_id "Device:Opamp_Dual")
-		(at 181.61 139.7 0)
+		(at 184.15 129.54 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "96b67718-8676-4bf0-ab3b-d08c94146ca2")
 		(property "Reference" "U2"
-			(at 180.34 138.4299 0)
+			(at 182.88 128.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9827,7 +10768,7 @@
 			)
 		)
 		(property "Value" "Opamp_Dual"
-			(at 180.34 140.9699 0)
+			(at 182.88 130.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9836,7 +10777,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9845,7 +10786,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9854,7 +10795,7 @@
 			)
 		)
 		(property "Description" "Dual operational amplifier"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9863,7 +10804,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9872,7 +10813,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_dual"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9881,7 +10822,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9890,7 +10831,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vee 5=in2+ 6=in2- 7=out2 8=vcc"
-			(at 181.61 139.7 0)
+			(at 184.15 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10276,7 +11217,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 144.78 133.35 0)
+		(at 148.59 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10285,7 +11226,7 @@
 		(fields_autoplaced yes)
 		(uuid "a29818a5-7929-4eca-8ebe-cc5e8f77d2cc")
 		(property "Reference" "#PWR038"
-			(at 144.78 139.7 0)
+			(at 148.59 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10294,7 +11235,7 @@
 			)
 		)
 		(property "Value" "AGND"
-			(at 144.78 138.43 0)
+			(at 148.59 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10302,7 +11243,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 133.35 0)
+			(at 148.59 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10311,7 +11252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 133.35 0)
+			(at 148.59 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10320,7 +11261,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 133.35 0)
+			(at 148.59 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10474,6 +11415,72 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-15V")
+		(at 181.61 140.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4a19080-f2eb-47d5-a559-ecd29e7c2ad4")
+		(property "Reference" "#PWR039"
+			(at 181.61 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V-"
+			(at 181.61 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-15V\""
+			(at 181.61 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d85b4e8e-0faf-42f8-ae5c-01f18118f806")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -10816,6 +11823,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 196.85 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abd002f8-8f8e-45f4-b904-4efa9920d72f")
+		(property "Reference" "C24"
+			(at 199.898 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 199.898 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 197.8152 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 196.85 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fe85d6da-6f73-4821-9248-11dd57acdbf3")
+		)
+		(pin "1"
+			(uuid "34715b6b-913a-40c1-ab5d-41445e6875cd")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 158.75 80.01 90)
 		(unit 1)
@@ -10944,72 +12020,6 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 179.07 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb357d2d-3247-44e9-9e8b-339013e4bbda")
-		(property "Reference" "#PWR08"
-			(at 179.07 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "AGND"
-			(at 179.07 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e5efe4d8-06f2-444f-8e04-a74a5266772a")
-		)
-		(instances
-			(project "power_glitcher"
-				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -11219,72 +12229,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 227.33 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd55fe54-3ef1-479e-95c2-c0ad341f31c6")
-		(property "Reference" "#PWR034"
-			(at 227.33 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "AGND"
-			(at 227.33 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96f0bab6-1529-42be-8f9b-fb67f67f6e0b")
-		)
-		(instances
-			(project "power_glitcher"
-				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "#PWR034")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 138.43 158.75 180)
 		(unit 1)
@@ -11353,17 +12297,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-15V")
-		(at 234.95 140.97 180)
+		(lib_id "power:+15V")
+		(at 151.13 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cdf828c8-0137-48ff-8603-8812d31c59fe")
-		(property "Reference" "#PWR033"
-			(at 234.95 137.16 0)
+		(uuid "ce702854-20e5-41ba-bdf9-bd24e3b4d8c3")
+		(property "Reference" "#PWR034"
+			(at 151.13 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11371,8 +12315,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "V-"
-			(at 234.95 146.05 0)
+		(property "Value" "V+"
+			(at 151.13 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11380,7 +12324,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 140.97 0)
+			(at 151.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11389,7 +12333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 140.97 0)
+			(at 151.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11397,8 +12341,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"-15V\""
-			(at 234.95 140.97 0)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 151.13 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11407,12 +12351,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "edd8d287-2a12-47cf-b95a-77fbe3439ad1")
+			(uuid "dd83c011-f896-4a41-ab42-f1b4dc88c131")
 		)
 		(instances
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "#PWR033")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -11757,32 +12701,100 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 148.59 128.27 180)
+		(lib_id "power:+15V")
+		(at 228.6 25.4 0)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ddf1f94c-6736-4b59-9ae0-1ca8ea688ede")
-		(property "Reference" "JP1"
-			(at 148.59 125.73 0)
+		(fields_autoplaced yes)
+		(uuid "dc4be13b-62cf-46c1-a3a5-fde90bb5b635")
+		(property "Reference" "#PWR040"
+			(at 228.6 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V+"
+			(at 228.6 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 148.59 123.19 0)
+		(property "Footprint" ""
+			(at 228.6 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 148.59 128.27 0)
+		(property "Datasheet" ""
+			(at 228.6 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 228.6 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62bd1bc3-1100-4587-a067-91bea3b347e9")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 189.23 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc9750de-adc6-436b-a9d1-56d569740b37")
+		(property "Reference" "C11"
+			(at 191.77 119.3799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 191.77 121.9199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 190.1952 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11791,7 +12803,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 128.27 0)
+			(at 189.23 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 189.23 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "17b49c23-b990-4988-927a-b1b440d99091")
+		)
+		(pin "1"
+			(uuid "99a058fd-c65b-47ae-b263-9075a2865ef8")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 152.4 124.46 180)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddf1f94c-6736-4b59-9ae0-1ca8ea688ede")
+		(property "Reference" "JP1"
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 152.4 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 152.4 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11800,7 +12879,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 148.59 128.27 0)
+			(at 152.4 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11957,10 +13036,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e16efd92-870b-404f-b5ff-f2d6242a7bef")
 		(property "Reference" "C12"
-			(at 52.07 157.48 90)
+			(at 52.07 159.258 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11968,7 +13046,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 52.07 160.02 90)
+			(at 52.07 161.798 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12160,76 +13238,6 @@
 			(project ""
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 204.47 138.43 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e7d2cf5a-fe55-4c3f-8d9b-3f2b81192bcf")
-		(property "Reference" "C13"
-			(at 208.28 137.1599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 208.28 139.6999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 205.4352 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 204.47 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 204.47 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7d396c8e-e1ec-4a59-a4a4-a71bd5512ead")
-		)
-		(pin "1"
-			(uuid "3c3bc7de-a4b1-4733-b856-d9e61ee4e0ed")
-		)
-		(instances
-			(project "power_glitcher"
-				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
-					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -12507,7 +13515,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 60.96 184.15 0)
+		(at 60.96 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12516,7 +13524,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed8445e9-db92-49e8-99ea-c3d55cce5d35")
 		(property "Reference" "#PWR016"
-			(at 60.96 190.5 0)
+			(at 60.96 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12525,7 +13533,7 @@
 			)
 		)
 		(property "Value" "AGND"
-			(at 60.96 189.23 0)
+			(at 60.96 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12533,7 +13541,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 184.15 0)
+			(at 60.96 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12542,7 +13550,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 184.15 0)
+			(at 60.96 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12551,7 +13559,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 184.15 0)
+			(at 60.96 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12778,6 +13786,158 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_SwitchedCapacitor:ICL7660")
+		(at 172.72 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f6810fe2-60cf-4298-a07d-c9f09358ec93")
+		(property "Reference" "U4"
+			(at 172.72 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ICL7660"
+			(at 172.72 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 175.26 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/ICL7660-MAX1044.pdf"
+			(at 175.26 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switched-Capacitor Voltage Converter, 1.5V to 10.0V operating supply voltage, 10mA with a 0.5V output drop, SO-8/DIP-8/µMAX-8/TO-99"
+			(at 172.72 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bc44abb3-7b05-4ae2-8e11-c2041fbbafa9")
+		)
+		(pin "5"
+			(uuid "6c34ff61-1f1d-4d18-be78-36ba8430b311")
+		)
+		(pin "6"
+			(uuid "5e9e3f35-972f-4a91-bb06-372972183e70")
+		)
+		(pin "7"
+			(uuid "1053987c-e225-4fb4-886f-ac4c3722b1a5")
+		)
+		(pin "1"
+			(uuid "8f7c4790-aaeb-49ad-b8a4-07b6385b48b2")
+		)
+		(pin "2"
+			(uuid "f5be4c4d-e5e7-4385-be89-b5f6ec7fd184")
+		)
+		(pin "8"
+			(uuid "9557193c-1e13-40b9-8121-87a5bb8edaf7")
+		)
+		(pin "4"
+			(uuid "ff04290a-9361-416e-9d08-165f367ec63b")
+		)
+		(instances
+			(project ""
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 45.72 187.96 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f681a589-8f67-4eb5-bd9a-97e0232b9aaa")
+		(property "Reference" "#PWR018"
+			(at 45.72 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "V+"
+			(at 45.72 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 45.72 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69542a0a-52ac-47b9-9211-746b52a44ec9")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 96.52 158.75 0)
 		(unit 1)
@@ -12907,6 +14067,72 @@
 			(project "power_glitcher"
 				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc0f2f99-bbb1-47d8-a0ca-271736dab693")
+		(property "Reference" "#PWR043"
+			(at 172.72 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "AGND"
+			(at 172.72 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab2b204e-edcf-46ca-bf8f-c35883cfc2db")
+		)
+		(instances
+			(project "power_glitcher"
+				(path "/b2b2e0dd-4236-4755-a2fb-b7f5f5584418"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)

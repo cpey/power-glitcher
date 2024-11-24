@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power Glitcher")
-		(date "2024-11-17")
-		(rev "2.0")
+		(date "2024-11-24")
+		(rev "2.1")
 		(company "Carles Pey")
 	)
 	(lib_symbols
@@ -6679,7 +6679,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0"
 			(at 213.614 97.536 0)
 			(effects
 				(font
@@ -7891,7 +7891,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "0"
 			(at 213.36 87.376 0)
 			(effects
 				(font
@@ -10563,7 +10563,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "64.9"
 			(at 182.88 91.44 90)
 			(effects
 				(font
@@ -12381,7 +12381,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100"
 			(at 135.89 105.4099 0)
 			(effects
 				(font
@@ -13734,7 +13734,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1pF"
 			(at 247.65 106.6799 0)
 			(effects
 				(font
@@ -14021,7 +14021,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "4K7"
 			(at 246.38 99.0599 0)
 			(effects
 				(font

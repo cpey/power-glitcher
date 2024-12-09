@@ -11,7 +11,7 @@
 
 * Power booster (page 234)
 
-* LM2735
+* LM2735: vout = 7.5 V
 
 10% ripple: Ail => 10% of max load = 10% of .5 A = 0.05 A
 20% ripple: Ail => 10% of max load = 10% of .5 A = 0.1 A

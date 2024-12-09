@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "8.0.5"
     },
-    "CreationDate": "2024-11-17T22:13:22-05:00"
+    "CreationDate": "2024-12-08T21:31:54-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "power_glitcher",
       "GUID": "706f7765-725f-4676-9c69-74636865722e",
-      "Revision": "2.0"
+      "Revision": "3.0"
     },
     "Size": {
       "X": 46.3288,
